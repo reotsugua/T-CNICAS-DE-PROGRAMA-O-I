@@ -1,11 +1,9 @@
 package Aula01;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
-public class Main {
+public class LocalDate {
     public static void main(String[] args) {
         
         /*//LocalDate
@@ -19,11 +17,18 @@ public class Main {
         System.out.println("dataLocal = " + dataLocal);
         System.out.println("ano = " + dataLocal.getYear());*/
         
-        /*//LocalTime
+        //LocalTime
         //HH:MM:SS:NANOSECOND
+
         LocalTime hora;// = LocalTime.now();
-        hora = LocalTime.parse("19:00:02");
-        hora= hora.plus(6, ChronoUnit.HOURS);
+        String h = "20:20:20";
+        int m = 20;
+        int s = 20;
+
+        hora = LocalTime.parse(h);
+        hora = LocalTime.of(02,m,s);
+        System.out.println("hora = " + hora);
+        /*hora= hora.plus(6, ChronoUnit.HOURS);
         System.out.println("hora = " + hora);
         System.out.println("segundos = " + hora.getSecond());*/
 
