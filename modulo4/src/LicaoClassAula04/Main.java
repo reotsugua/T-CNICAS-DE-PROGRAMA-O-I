@@ -11,9 +11,9 @@ public class Main {
 
         Calculadora calculadora = new Calculadora();
 
-        calculadora.executar(5, 3, somar);
-        calculadora.executar(5, 3, subtrair);
-        calculadora.executar(5, 3, multiplicar);
-        calculadora.executar(5, 3, dividir);
+        calculadora.executar(15, 14, somar);
+        calculadora.executar(5, 6, subtrair);
+        calculadora.executar(9, 9, multiplicar);
+        calculadora.executar(12, 6, dividir);
     }
 }
