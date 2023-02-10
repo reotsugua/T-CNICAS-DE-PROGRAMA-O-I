@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class Exercicio {
@@ -27,5 +28,8 @@ public class Exercicio {
             System.out.println("Dose tomada em: " + dataDose);
             dataDose = dataDose.plus(period);
         }
+
+        LocalDate now = LocalDate.now();
+        System.out.println(now.format(DateTimeFormatter.ofPattern("EEEE")));
     }
 }
