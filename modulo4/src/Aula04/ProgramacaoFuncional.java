@@ -6,7 +6,9 @@ public class ProgramacaoFuncional {
         System.out.println(subtracao(5,6));
         
         Operacao corpoDoMetodo = ((a, b) -> a+b);
-        Operacao sub = ((a, b) -> a-b);
+        Operacao sub = (a, b) -> {
+            return a-b;
+        };
         System.out.println(calcula(5,6,corpoDoMetodo));
         System.out.println(calcula(5,6,sub));
     }
